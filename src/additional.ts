@@ -6,7 +6,7 @@ also adding buttons to navigate between home , about and 404 pages
 >>>>> (i know 404 button seems suspisious 😂 but i just want to show how to handle 404 page in the server)
 */
 
-export const { createServer } = require('http')
+export const { createServer } = require('node:http')
 
 const server = createServer((request, response) => {
     
@@ -140,4 +140,5 @@ const server = createServer((request, response) => {
 server.listen(3000, () => {
     console.log(`Server is running on http://localhost:3000`)
     console.log('waiting for your feedback ENG.Yaqoob...') 
+
 })
